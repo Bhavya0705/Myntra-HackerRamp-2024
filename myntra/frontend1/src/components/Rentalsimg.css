@@ -1,0 +1,13 @@
+.main-image {
+    width: 100%;
+    margin-top: 20px; /* Adjust the margin as needed */
+    text-align: center;
+}
+
+.main-image img {
+    width: 100%;
+    height: auto;
+    max-width: 80vw; /* Ensure the image does not exceed the container */
+    border-radius: 10px; /* Optional: add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add a shadow for better contrast */
+}

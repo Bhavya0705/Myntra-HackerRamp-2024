@@ -1,0 +1,5 @@
+.main-content {
+    margin-top: 10vh;
+    flex: 1; /* Take remaining vertical space */
+    padding: 20px; /* Adjust padding as needed */
+}

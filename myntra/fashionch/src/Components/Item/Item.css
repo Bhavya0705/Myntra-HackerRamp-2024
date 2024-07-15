@@ -1,0 +1,31 @@
+.item
+{
+    width:350px;
+}
+.item p{
+    margin: 10px 0px;
+    font-size: 17px;
+    text-align: center;
+    font-weight: 600;
+    color: #DE3163;
+}
+
+.item:hover
+{
+    transform: scale(1.05);
+    transition : 0.6s;
+}
+.category-image
+{
+    width: 330px;
+}
+.vote-button
+{
+    padding: 10px 80px;
+    margin-left: 70px;
+    margin-top: 10px;
+    background-color:#DC143C;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+}

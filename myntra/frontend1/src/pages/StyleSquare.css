@@ -1,0 +1,158 @@
+/* .style-square {
+    display: flex;
+    margin-top: 10vh;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header {
+    flex-shrink: 0;
+}
+
+.stylesquare-box {
+    flex-grow: 1;
+}
+
+.footer {
+    flex-shrink: 0;
+} */
+.style-square {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10vh;
+}
+
+.head {
+    flex-shrink: 0;
+    padding: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+    font-size: 36px;
+    color: #d20456;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+    padding: 5px 0;
+}
+
+.tab {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 18px;
+    margin: 0 10px;
+    color: #555;
+}
+
+.tab:hover {
+    color: #333;
+    text-decoration: underline;
+}
+
+.stylesquare-box {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+
+.footer {
+    flex-shrink: 0;
+}
+
+.profiles {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 3.7vw;
+    margin-top: 7vh;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 28px;
+    padding: 20px;
+}
+
+.profile-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    height: 28vh;
+    width:200px;
+    text-align: center;
+    position:relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.profile-card img {
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    object-fit: cover;
+}
+
+.profile-info {
+    padding: 10px;
+}
+
+.profile-info h2 {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.profile-info p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.profile-actions {
+    display: flex;
+    position: absolute;
+    bottom: 10px;
+    left: 10%;
+    right: 10%;
+    gap: 10px;
+    justify-content: space-between;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    align-items: center;
+}
+
+.profile-card:hover .profile-actions {
+    opacity: 1; 
+}
+
+.icon {
+    background-color: #fff;
+    border: 2px solid #a7336d; /* Pink border */
+    border-radius: 50%;
+    padding: 5px;
+    color: #a7336d; /* Pink color for the icon */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.icon:hover {
+    background-color: #ff69b4;
+    color: #fff; /* White color for the icon when hovered */
+}
+
+.heart-icon, .share-icon {
+    font-size: 0.8em; /* Adjust size of the icons */
+}

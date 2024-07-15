@@ -1,0 +1,203 @@
+.designer7Details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-top: 60px; /* Adjust based on header height */
+}
+
+.designerProfile {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.designerImage {
+    max-width: 100%; 
+    max-height: 100%;
+    width: 200px; 
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.designerInfo {
+    text-align: center;
+    margin-top: 0px;
+}
+
+.designerInfo h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    color: #650478;
+    margin-bottom: 10px;
+}
+
+.designerAge, .designerQuote {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.designerQuote {
+    font-style: italic;
+}
+
+.designerPhilosophy, .designerBio {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #777;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.designerCollection {
+    text-align: center;
+    margin-top: 10px;
+    max-width: 100%;
+    width: 100%;
+    padding: 20px; 
+}
+
+.designerCollection h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #8e0f81;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    width: 100%;
+    margin-top: 0px;;
+}
+
+.productGrid {
+    margin-left: 7vw;
+    margin-right: 7vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 20px;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.productCard {
+    flex: 0 1 calc(20% - 20px); 
+    height: 50vh;
+    width: 15vw;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.productCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.productImage {
+    margin-top: 2vh;
+    border-radius: 6%;
+    width: 10vw;
+    height: 25vh;
+}
+
+.productDetails {
+    padding: 10px;
+}
+
+.productName {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.productDesigner, .productPrice {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+/* Existing styles */
+
+@media (max-width: 768px) {
+    .designerProfile {
+        padding: 10px;
+    }
+
+    .designerCollection {
+        padding: 10px;
+    }
+
+    .productGrid {
+        margin-left: 3vw;
+        margin-right: 3vw;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        grid-gap: 10px;
+    }
+
+    .productCard {
+        height: auto;
+        width: auto;
+    }
+
+    .productImage {
+        width: 80%;
+        height: auto;
+    }
+
+    .designerImage {
+        width: 150px;
+        height: 150px;
+    }
+
+    .designerInfo h1 {
+        font-size: 24px;
+    }
+
+    .designerInfo p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .productGrid {
+        margin-left: 2vw;
+        margin-right: 2vw;
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+        grid-gap: 5px;
+    }
+
+    .productCard {
+        height: auto;
+        width: auto;
+    }
+
+    .productImage {
+        width: 100%;
+        height: auto;
+    }
+
+    .designerImage {
+        width: 120px;
+        height: 120px;
+    }
+
+    .designerInfo h1 {
+        font-size: 20px;
+    }
+
+    .designerInfo p {
+        font-size: 12px;
+    }
+}

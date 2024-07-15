@@ -1,0 +1,85 @@
+/* src/pages/Bag.css */
+.bag {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.bag h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.bag h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top:10vh;
+}
+
+.bag-items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.bag-item {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+}
+
+.bag-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 16px;
+}
+
+.item-info h4 {
+    margin: 0 0 8px 0;
+}
+
+.item-info p {
+    margin: 4px 0;
+    color: #777;
+}
+
+.bag-summary {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.checkout-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.checkout-button:hover {
+    background-color: #0056b3;
+}
+
+a {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #007bff;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.item-info select {
+    margin-top: 8px;
+    padding: 8px;
+    border-radius: 4px;
+}

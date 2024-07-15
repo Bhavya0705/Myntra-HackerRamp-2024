@@ -1,0 +1,162 @@
+/* src/pages/Rentals.css */
+
+.rentals {
+    padding: 20px;
+    margin-top: 9vh;
+}
+
+.head {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.tab {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    background-color: #f1f1f1;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+    margin: 0 5px;
+}
+
+.tab.active {
+    background-color: #555;
+    color: white;
+}
+
+.tab-content {
+    text-align: center;
+}
+
+.main-content {
+    margin-top: 10vh;
+    flex: 1; /* Take remaining vertical space */
+    padding: 20px; /* Adjust padding as needed */
+}
+
+.categories {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.category {
+    position: static;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+    margin: 0 5px;
+}
+
+.category:hover {
+    background-color: #ffffff;
+}
+
+.dropdown {
+    position: static;
+    top: 40px; /* Adjust the position to be below the category */
+    left: 0;
+    right: 0;
+    align-items: center;
+    background-color: white;
+    border: 1px solid #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding: 10px;
+}
+
+.dropdown a:hover {
+    background-color: #ffffff;
+    z-index: 1000;
+}
+
+.rentals-img-container {
+    position: relative;
+    z-index: 1; /* Ensure Rentalsimg is behind dropdown */
+}
+
+.rentals-img {
+    max-width: 100%;
+    height: 0;
+    display: block;
+    margin: 0;
+}
+
+.product-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+    height:min-content;
+    margin: 10px;
+    width: 200px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.product-info {
+    padding: 10px;
+}
+
+.product-info h4 {
+    margin: 10px 0;
+}
+
+.product-info p {
+    color: #888;
+}
+
+
+
+.newest-in-town,
+.top-rented-items {
+    width: 100%;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.newest-in-town h2,
+.top-rented-items h2 {
+    margin-bottom: 10px;
+    margin-left: 10vw;
+}
+
+.more-link {
+    text-align: right;
+    margin-right: 20px;
+    text-decoration: underline;
+}
+
+
+.newest-in-town .product-cards, .top-rented-items .product-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}

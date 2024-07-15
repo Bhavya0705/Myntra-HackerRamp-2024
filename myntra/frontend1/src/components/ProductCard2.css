@@ -1,0 +1,38 @@
+/* src/components/ProductCard2.css */
+.product-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 8px;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.2s;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product-card .product-info {
+    text-align: center;
+    margin-top: 8px;
+}
+
+.product-card .product-info h4 {
+    margin: 8px 0;
+    font-size: 1.1em;
+}
+
+.product-card .product-info p {
+    margin: 0;
+    color: #777;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}

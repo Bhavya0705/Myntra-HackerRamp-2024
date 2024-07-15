@@ -1,0 +1,37 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.header-icons {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.header-icons svg {
+    color: #888;
+    cursor: pointer;
+    width: 24px; 
+    height: 24px; 
+}
+
+.main-content {
+    margin-top: 60px; /* Adjust based on header height */
+}

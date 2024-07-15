@@ -1,0 +1,51 @@
+.newest-launches {
+    margin-top: 7px;
+    margin-left:8vw;
+    margin-right:8vw;
+    padding: 20px;
+    text-align: left;
+}
+
+/*.newest-launches h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #d20456;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}*/
+
+.newest-launches h2 {
+    margin-bottom: 28px;
+    font-size: 28px; /* Increased font size for impact */
+    color: #d20456; /* Glamorous pink color */
+    font-family: 'Roboto', sans-serif; /* Stylish font family */
+    font-weight:100; /* Bold font weight */
+    text-transform: uppercase; /* Uppercase text for emphasis */
+    text-shadow:5px 5px 20px rgba(0, 0, 0, 0.649);
+    letter-spacing: 1px; /* Slightly increased letter spacing */
+}
+
+.launches-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    gap: 3vw;
+}
+
+.launch-item {
+    /*flex: 0 1 calc(50% - 40px); /* Adjust the width as needed */
+    flex: 0 1 calc(15% - 40px); /* Adjust the width as needed */
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+
+}
+
+.launch-item img {
+    width: 10vw;
+    height: 30vh;
+    max-width:20vw;
+    max-height: 30vh;
+    border-radius: 10px; /* Optional: add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add a shadow for better contrast */
+}

@@ -1,0 +1,33 @@
+.categories {
+    display: flex;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    margin-top : 3vh;
+    padding: 1vh;
+    gap: 10px;
+    justify-content: center;
+    
+}
+
+.category {
+    flex: 0 0 auto; /* Ensure the categories do not shrink */
+    text-align: center;
+    width: 7vw; 
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    font-weight: lighter;
+    letter-spacing: 0.5px;
+    font-size: 12px;
+}
+
+.category img {
+    width: 60px;
+    height: 70px;
+    border-radius: 8px; /* Optional: rounded corners */
+}
+
+.category span {
+    display: block;
+    margin-top: 0vh;
+    font-size: 14px; /* Adjust text size as needed */
+    color: #333;
+}
